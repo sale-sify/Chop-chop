@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&display=swap');
+
+.rubik-mono-one-regular {
+  font-family: "Rubik Mono One", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+    margin: 0;
+}
+
+*::-webkit-scrollbar {
+    width: 8px;
+}
+*::-webkit-scrollbar-track{
+    background: none;
+}
+*::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom left, #ffcc00, #f0a606, #cc38d1 );
+    border-radius: 70vh;
+}
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+    width: auto;
+    background-color: rgb(151, 7, 7);
+    padding: 10px;
+    border-bottom: 7px solid rgb(4, 83, 4);
+}
+
+.SEO-hidden {
+    display: none;
+}
+
+.nav-left-side {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    margin-right: 15px;
+    
+}
+
+.nav-right-side {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    margin-left: 15px;
+}
+
+.btn-header {
+    background: none;
+    border: none;
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    text-decoration: underline;
+    color: rgb(255, 196, 0);
+    margin: 2px;
+}
+
+.container-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+}
+
+#logo-header {
+    border-radius: 50%;
+    margin-top: 15px;
+    border: 3px solid salmon;
+    width: 185px;
+}
+
+.landing-page {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    background-image: url(/Images/backkground-img.jpg);
+    background-size: cover;
+    height: fit-content;
+    padding: 15px;
+    border-bottom: 1px solid black;
+}
+
+.playlist-landing-page {
+    width: 50%;
+    padding-bottom: 20%;
+    margin-left: 15px;
+}
+
+.playlist-landing-page > iframe {
+    height: max-content;
+}
+
+.right-side-landing-page {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-top: 5%;
+    margin-right: 15px;
+    width: 50%;
+    padding: 2%;
+}
+
+.icons-reseaux {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 15%;
+}
+
+.icons-reseaux > a > img {
+    height: 100%;
+    max-height: 245px;
+    width: 100%;    
+}
+
+.icons-reseaux > a {
+    height: 12%;
+    max-height: 245px;
+    width: 12%;
+    margin: 7px;
+}
+
+.right-side-landing-page > h3 {
+    font-size: 400%;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    text-align: right;
+    color: antiquewhite;
+}
+
+
+.acceuil {
+    height: fit-content;
+    width: auto;
+    padding: 2%;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #f0a606;
+    border-bottom: 1px solid black;
+}
+
+.acceuil > h2 {
+    padding: 3%;
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(151, 7, 7);
+    text-decoration: underline;  
+}
+
+.introduction {
+    width: 70%;
+    padding-left: 3%;
+    padding-right: 3%;
+    text-align: justify;
+    font-size: 140%;
+    color: rgb(151, 7, 7);
+    font-weight: 600;
+    line-height: 37px;
+}
+
+.introduction > p > span {
+    color: #f0a606;
+}
+
+.container-line1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(151, 7, 7) ;
+}
+
+.container-line1 > img {
+    width: 50%;
+    max-width: 550px;
+    border-radius: 15px;
+    margin-right: 2%;
+    margin-left: 2%;
+    border: 2px solid salmon;
+    box-shadow: 2px 2px 8px black;
+}
+
+
+.philosophie {
+    width: 70%;
+    padding-left: 3%;
+    padding-right: 3%;
+    text-align: justify;
+    font-size: 140%;
+    color: rgb(151, 7, 7);
+    font-weight: 600;
+    line-height: 37px;
+}
+
+
+
+.container-line2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 15px;
+    padding-top: 15px;
+}
+
+.container-line2 > img {
+    width: 30%;
+    max-width: 550px;
+    border-radius: 15px;
+    margin-right: 2%;
+    margin-left: 2%;
+    border: 2px solid salmon;
+    box-shadow: 2px 2px 8px black;
+}
+
+.carte {
+    height: fit-content;
+    width: auto;
+    padding: 2%;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: antiquewhite;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.carte > h2 {
+    padding: 3%;
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(151, 7, 7);
+    text-decoration: underline;  
+    display: flex;
+    justify-content: flex-start;
+}
+
+.la-carte > p {
+    width: 85%;
+    padding-left: 3%;
+    padding-right: 3%;
+    text-align: center;
+    font-size: 120%;
+    color: rgb(151, 7, 7);
+    font-weight: 600;
+    line-height: 37px;
+}
+
+.la-carte > h4 {
+    font-size: 120%;
+    color: rgb(151, 7, 7);
+    font-weight: 600;
+    text-decoration: underline;
+    line-height: 37px;
+    margin: 3%;
+}
+
+.caroussel {
+    width: 95%;
+    height: 70vh;
+    background-color: rgb(235, 203, 161);
+    border: 1px solid salmon;
+    border-radius: 15px;
+    box-shadow: 8px 8px 16px gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.img-container {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+}
+
+.img-container > img {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    border-radius: 15px;
+    border: 1px solid gray;
+    box-shadow: 2px 2px 6px rgb(68, 68, 68);
+    transition-duration: 500ms;
+}
+
+
+.boissons {
+    height: 70vh;
+    width: auto;
+    padding: 2%;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #f0a606;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.header-boisson{
+    width: 80%;
+}
+
+.header-boisson > h2 {
+    padding: 3%;
+    width: 80%;
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(151, 7, 7);
+    text-decoration: underline;  
+    display: flex;
+    justify-content: flex-start;
+}
+
+.cote-boisson {
+    width: 70%;
+    padding-left: 3%;
+    padding-right: 3%;
+    text-align: justify;
+    font-size: 140%;
+    color: rgb(151, 7, 7);
+    font-weight: 600;
+    line-height: 37px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.cote-boisson > p {
+    padding-bottom: 40px ;
+    border-bottom: 1px solid rgb(151, 7, 7);
+}
+
+.cote-boisson > p > span {
+    color: #f0a606;
+}
+
+.exemple-boissons {
+    padding: 3%;
+
+}
+
+
+
+
+
+

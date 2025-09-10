@@ -1,0 +1,3 @@
+;/*FB_PKG_DELIM*/
+
+__d("PolarisSettingsActionLogoutUtils",["CometRelay","PolarisDismissEntry","PolarisRelayEnvironment","PolarisSettingsActionLogoutUtilsMutation.graphql"],(function(a,b,c,d,e,f,g){"use strict";var h;function a(a){d("PolarisDismissEntry").removeDismissEntry(d("PolarisDismissEntry").CAA_SPI_DIALOG_TYPE),d("CometRelay").commitMutation(c("PolarisRelayEnvironment"),{mutation:h!==void 0?h:h=b("PolarisSettingsActionLogoutUtilsMutation.graphql"),variables:{userId:a}})}g.doFetaLogout=a}),98);

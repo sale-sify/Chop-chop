@@ -1,0 +1,3 @@
+;/*FB_PKG_DELIM*/
+
+__d("polarisSendLogoutRequestFeta",["PolarisDismissEntry"],(function(a,b,c,d,e,f,g){"use strict";function a(){d("PolarisDismissEntry").removeDismissEntry(d("PolarisDismissEntry").CAA_SPI_DIALOG_TYPE)}g.fetaRemoveDismissEntry=a}),98);

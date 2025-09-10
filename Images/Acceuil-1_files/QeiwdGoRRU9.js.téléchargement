@@ -1,0 +1,3 @@
+;/*FB_PKG_DELIM*/
+
+__d("LSFlushDataTrace.nop",["MetaConfig","Promise","ReQL","updateAndFlushLSDataTrace"],(function(a,b,c,d,e,f,g){"use strict";var h;a=function(a,e,f){return!c("MetaConfig")._("62")?(h||(h=b("Promise"))).resolve():d("ReQL").firstAsync(d("ReQL").fromTableAscending(a.data_trace_meta).getKeyRange(f)).then(function(d){if(d!=null)return c("updateAndFlushLSDataTrace")(a,f);else return(h||(h=b("Promise"))).resolve()})};a.__nop_name__="LSFlushDataTrace";g["default"]=a}),98);
