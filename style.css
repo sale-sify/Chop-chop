@@ -279,7 +279,7 @@
 
 .caroussel {
     width: 95%;
-    height: 70vh;
+    height: 60vh;
     background-color: rgb(235, 203, 161);
     border: 1px solid salmon;
     border-radius: 15px;
@@ -294,6 +294,15 @@
     display: flex;
     align-items: center;
     overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%; 
+}
+
+.img-container > img:hover {
+  transform: scale(1.10);
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 .img-container > img {

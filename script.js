@@ -19,6 +19,27 @@ carteBtn.addEventListener('click',
     }
 );
 
+// Pour les boissons
+const boissonsBtn = document.querySelector('#btn-boissons');
+const boissons = document.querySelector('.boissons');
+
+boissonsBtn.addEventListener('click', 
+    function () {
+        boissons.scrollIntoView({ behavior: "smooth", block: 'start'});
+    }
+);
+
+// Pour les infos
+const infosBtn = document.querySelector('#btn-info');
+const infos = document.querySelector('.infos');
+
+infosBtn.addEventListener('click', 
+    function () {
+        infos.scrollIntoView({ behavior: "smooth", block: 'start'});
+    }
+);
+
+
 
 
 // Animation des boutons dans le header 
@@ -56,12 +77,11 @@ function autoScroll () {
                 console.log('wait 2 sec');
             }, "2000");
         } else {
-            container.scrollLeft += 2                                                  //Defilement automatique
+            container.scrollLeft += 1                                                  //Defilement automatique
         }
-    }, 40);     
+    }, 10);     
 };
-
-// Appel de la fonction pour demarrer le scroll 
+    // Appel de la fonction pour demarrer le scroll 
 autoScroll();
 
 
