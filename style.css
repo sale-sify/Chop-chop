@@ -20,6 +20,14 @@
     background: linear-gradient(to bottom left, #ffcc00, #f0a606, #cc38d1 );
     border-radius: 70vh;
 }
+
+/*          #######################################################
+            #######################################################
+            ########                HEADER                  #######
+            #######################################################
+            ####################################################### */
+
+
 .header {
     display: flex;
     justify-content: space-around;
@@ -77,6 +85,15 @@
     border: 3px solid salmon;
     width: 185px;
 }
+
+
+
+/*          #######################################################
+            #######################################################
+            ########             LANDING PAGE               #######
+            #######################################################
+            ####################################################### */
+
 
 .landing-page {
     display: flex;
@@ -143,6 +160,14 @@
 }
 
 
+
+/*          #######################################################
+            #######################################################
+            ########                ACCEUIL                 #######
+            #######################################################
+            ####################################################### */
+
+
 .acceuil {
     height: fit-content;
     width: auto;
@@ -198,7 +223,6 @@
     box-shadow: 2px 2px 8px black;
 }
 
-
 .philosophie {
     width: 70%;
     padding-left: 3%;
@@ -209,8 +233,6 @@
     font-weight: 600;
     line-height: 37px;
 }
-
-
 
 .container-line2 {
     display: flex;
@@ -229,6 +251,15 @@
     border: 2px solid salmon;
     box-shadow: 2px 2px 8px black;
 }
+
+
+
+/*          #######################################################
+            #######################################################
+            ########                 CARTE                  #######
+            #######################################################
+            ####################################################### */
+
 
 .carte {
     height: fit-content;
@@ -278,7 +309,7 @@
 }
 
 .caroussel {
-    width: 95%;
+    width: 100%;
     height: 60vh;
     background-color: rgb(235, 203, 161);
     border: 1px solid salmon;
@@ -290,14 +321,14 @@
 }
 
 .img-container {
-    width: 85%;
+    width: 95%;
     display: flex;
     align-items: center;
     overflow-x: auto;
     scrollbar-width: none;
-    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-    -webkit-mask-repeat: no-repeat;
-    -webkit-mask-size: 100% 100%; 
+    mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+    mask-repeat: no-repeat;
+    mask-size: 100% 100%; 
 }
 
 .img-container > img:hover {
@@ -315,6 +346,13 @@
     box-shadow: 2px 2px 6px rgb(68, 68, 68);
     transition-duration: 500ms;
 }
+
+
+/*          #######################################################
+            #######################################################
+            ########               BOISSONS                 #######
+            #######################################################
+            ####################################################### */
 
 
 .boissons {
@@ -376,9 +414,130 @@
 
 .exemple-boissons {
     padding: 3%;
-
 }
 
+
+/*          #######################################################
+            #######################################################
+            ########                 INFOS                  #######
+            #######################################################
+            ####################################################### */
+
+
+.infos {
+    height: 120vh;
+    background: rgb(235, 203, 161);
+    width: auto;
+    padding: 2%;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    border-bottom: 1px solid black;
+    display: flex;
+}
+
+
+.section-title > h2 {
+    padding: 30%;
+    padding-bottom: 80%;
+    margin-left: 80%;
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(151, 7, 7);
+    text-decoration: underline;
+}
+
+
+.infos-left-side {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+.histoire, .why-us, .horaires-et-liens {
+    width: 90%;
+    font-size: 130%;
+    color: rgb(151, 7, 7);
+    font-weight: 500;
+    line-height: 37px;
+}
+
+.horaires-et-liens {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.horaires {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+    padding: 3rem;
+    border: 1px solid rgb(151, 7, 7);
+    border-radius: 25px;
+}
+.horaires:hover {
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.4);
+    transition-duration: 500ms;
+}
+.horaires > p > span {
+    text-decoration: underline;
+    font-size: 120%;
+    font-weight: 700;
+}
+
+.liens-utiles {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+.liens-utiles > a {
+    font-size: 90%;
+    font-family: "Rubik Mono One", monospace;
+    text-decoration: none;
+    color: rgb(228, 186, 1);
+    background: rgb(151, 7, 1);
+    border: 2px solid rgb(228, 186, 1);
+    border-radius: 20px;
+    box-shadow:
+        inset -6px -6px 7px rgba(0,0,0,0.2),             
+        inset 5px 5px 7px rgba(255,255,255,0.6),         
+        2px 4px 6px rgba(0,0,0,0.2);   
+    padding: 1rem;
+    width: 15rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.liens-utiles > a:hover {
+    box-shadow: inset -2px -2px 3px rgba(0,0,0,0.2),             
+        inset 2px 2px 3px rgba(255,255,255,0.6),         
+        1px 2px 4px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+
+
+
+
+/*          #######################################################
+            #######################################################
+            ########                FOOTER                  #######
+            #######################################################
+            ####################################################### */
 
 
 
