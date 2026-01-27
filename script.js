@@ -42,26 +42,6 @@ infosBtn.addEventListener('click',
 
 
 
-// Animation des boutons dans le header 
-
-const headerBtn = document.querySelectorAll('.btn-header');
-
-for (let i = 0; i < headerBtn.length; i++) {
-    headerBtn[i].addEventListener('mouseenter', 
-        function () {
-            this.style.fontSize = '23px';   
-        }
-    );
-
-    headerBtn[i].addEventListener('mouseleave', 
-        function () {
-            this.style.fontSize = '20px';
-        }
-    );
-};
-
-
-
 // Mise en animation du caroussel 
 
 const images = document.querySelectorAll('.img-container > img');
