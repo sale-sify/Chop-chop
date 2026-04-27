@@ -29,15 +29,6 @@ boissonsBtn.addEventListener('click',
     }
 );
 
-// Pour les infos
-const infosBtn = document.querySelector('#btn-info');
-const infos = document.querySelector('.infos');
-
-infosBtn.addEventListener('click', 
-    function () {
-        infos.scrollIntoView({ behavior: "smooth", block: 'start'});
-    }
-);
 
 
 
