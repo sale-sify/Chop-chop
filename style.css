@@ -324,7 +324,8 @@
 }
 
 .caroussel {
-    width: 100%;
+    width: 90%;
+    max-width: 1200px;
     height: 60vh;
     background-color: rgb(235, 203, 161);
     border: 1px solid salmon;
@@ -332,7 +333,8 @@
     box-shadow: 8px 8px 16px gray;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 .img-container {
@@ -598,6 +600,141 @@
 }
 
 
+
+
+/*          #######################################################
+            #######################################################
+            ########                FOOTER                  #######
+            #######################################################
+            ####################################################### */
+
+
+.footer {
+    background-color: rgb(151, 7, 7);
+    color: rgb(255, 196, 0);
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 3rem 4%;
+    border-top: 7px solid rgb(4, 83, 4);
+}
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    min-width: 160px;
+}
+
+.footer-logo {
+    width: 90px;
+    border-radius: 50%;
+    border: 3px solid salmon;
+}
+
+.footer-tagline {
+    font-size: 95%;
+    font-weight: 600;
+    line-height: 1.6;
+    color: rgb(235, 177, 103);
+}
+
+.footer-info,
+.footer-horaires,
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    min-width: 160px;
+}
+
+.footer-info h4,
+.footer-horaires h4,
+.footer-links h4 {
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 400;
+    font-size: 100%;
+    text-decoration: underline;
+    margin-bottom: 0.4rem;
+    color: rgb(255, 196, 0);
+}
+
+.footer-info p,
+.footer-horaires p {
+    font-size: 90%;
+    font-weight: 500;
+    line-height: 1.7;
+    color: rgb(235, 177, 103);
+}
+
+.footer-links a {
+    font-family: "Rubik Mono One", monospace;
+    font-size: 80%;
+    text-decoration: none;
+    color: rgb(228, 186, 1);
+    background: rgb(120, 5, 1);
+    border: 2px solid rgb(228, 186, 1);
+    border-radius: 20px;
+    padding: 0.6rem 1.2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow:
+        inset -4px -4px 6px rgba(0,0,0,0.2),
+        inset 3px 3px 6px rgba(255,255,255,0.15),
+        2px 3px 8px rgba(0,0,0,0.3);
+}
+
+.footer-links a:hover {
+    box-shadow:
+        inset -2px -2px 3px rgba(0,0,0,0.2),
+        inset 2px 2px 3px rgba(255,255,255,0.1),
+        1px 2px 4px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.8rem;
+}
+
+.footer-social a {
+    width: 42px;
+    height: 42px;
+    background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+    transition: transform 0.3s ease;
+}
+
+.footer-social a:hover {
+    transform: scale(1.15);
+    box-shadow: none;
+    background: none;
+}
+
+.footer-social a img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.footer-bottom {
+    width: 100%;
+    text-align: center;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 196, 0, 0.3);
+    font-size: 80%;
+    color: rgb(235, 177, 103);
+}
 
 
 html, body {
@@ -887,6 +1024,32 @@ img, iframe {
         height: 260px;
         margin-top: 22px;
         margin-right: 0;
+    }
+
+    /* FOOTER */
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 2rem 14px;
+        gap: 1.5rem;
+    }
+
+    .footer-brand,
+    .footer-info,
+    .footer-horaires,
+    .footer-links {
+        width: 100%;
+        align-items: center;
+    }
+
+    .footer-links a {
+        width: 80%;
+        max-width: 280px;
+    }
+
+    .footer-social {
+        justify-content: center;
     }
 }
 
